@@ -326,18 +326,18 @@ bye bhai
 
 | **Category** | **Dad Lang** | **Meaning** | **JavaScript Equivalent** |
 |--------------|--------------|-------------|---------------------------|
-| **Program** | `hi bhai` | Start program | `{` |
-| | `bye bhai` | End program | `}` |
-| **I/O** | `bol bhai` | Print | `console.log()` |
+| **Program** | `idhar aao` | Start program | `{` |
+| | `jao padhai karo` | End program | `}` |
+| **I/O** | `jawab de` | Print | `console.log()` |
 | **Variables** | `ye sambhal` | Variable | `let` |
-| | `ye pakka` | Constant | `const` |
-| **Values** | `nalla` | Null | `null` |
+| | `parampara` | Constant | `const` |
+| **Values** | `NALLA` | Null | `null` |
 | | `sahi` | True | `true` |
 | | `galat` | False | `false` |
-| **Conditions** | `agar bhai` | If | `if` |
+| **Conditions** | `agar sharam hai` | If | `if` |
 | | `nahi to bhai` | Else if | `else if` |
-| | `warna bhai` | Else | `else` |
-| **Loops** | `jab tak bhai` | While | `while` |
+| | `warna belt` | Else | `else` |
+| **Loops** | `jab tak main na bolu` | While | `while` |
 | | `bas kar bhai` | Break | `break` |
 | | `agla dekh bhai` | Continue | `continue` |
 | **OOP** | `khandaan` | Class | `class` |
@@ -350,6 +350,7 @@ bye bhai
 | | `bache_kuche` | Default | `default` |
 | **Async** | `dheere_dheere` | Async | `async` |
 | | `ruko_zara` | Await | `await` |
+| **Comments** | `chugli:` | Comment | `//` |
 | **Arrays** | `.aukaat` | Length | `.length` |
 | | `.thoos_de()` | Push | `.push()` |
 | | `.nikal_fek()` | Pop | `.pop()` |

@@ -2,10 +2,9 @@
 
 **A toy programming language based on strict Indian Parents.**  
 *"Kyu paida kiya tujhe?" - Compiler*
-
 ---
 
-![Dad Logic](https://media.giphy.com/media/l1IY7z6U4M50lFw40/giphy.gif)
+![Dad Lang Demo](assets/demo.png)
 
 ---
 

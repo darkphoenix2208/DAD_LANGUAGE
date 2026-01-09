@@ -1,0 +1,1 @@
+{"version":3,"file":"callExpression.d.ts","sourceRoot":"","sources":["callExpression.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,GAAG,CAAC;AACxB,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAI1C,MAAM,CAAC,OAAO,OAAO,cAAe,YAAW,OAAO;IAClD,SAAS,CAAC,IAAI,EAAE,OAAO;CAW1B"}

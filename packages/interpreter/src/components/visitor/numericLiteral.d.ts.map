@@ -1,0 +1,1 @@
+{"version":3,"file":"numericLiteral.d.ts","sourceRoot":"","sources":["numericLiteral.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,GAAG,CAAC;AACxB,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAE1C,MAAM,CAAC,OAAO,OAAO,cAAe,YAAW,OAAO;IACpD,SAAS,CAAC,IAAI,EAAE,OAAO;CAGxB"}

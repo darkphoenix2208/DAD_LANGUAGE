@@ -1,0 +1,1 @@
+{"version":3,"file":"assignmentExpression.d.ts","sourceRoot":"","sources":["assignmentExpression.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,GAAG,CAAC;AACxB,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAS1C,MAAM,CAAC,OAAO,OAAO,oBAAqB,YAAW,OAAO;IAC1D,SAAS,CAAC,IAAI,EAAE,OAAO;CAsCxB"}

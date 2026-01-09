@@ -1,0 +1,18 @@
+{
+  "extends": "../tsconfig/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "dad-lang-parser": [
+        "../parser/src/index.ts"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

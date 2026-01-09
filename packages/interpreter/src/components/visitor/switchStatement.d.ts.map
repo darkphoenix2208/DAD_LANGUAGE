@@ -1,0 +1,1 @@
+{"version":3,"file":"switchStatement.d.ts","sourceRoot":"","sources":["switchStatement.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,GAAG,CAAC;AACxB,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAG1C,MAAM,CAAC,OAAO,OAAO,eAAgB,YAAW,OAAO;IACnD,SAAS,CAAC,IAAI,EAAE,OAAO;CAkD1B"}

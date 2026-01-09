@@ -1,0 +1,26 @@
+
+// 1. Entry Point: Every program starts with 'idhar aao' (Come here)
+idhar aao
+
+  // 2. Printing: 'jawab de' (Answer me) prints to the console
+  jawab de "Namaste Dad!";
+
+  // 3. Variables: 'ye sambhal' (Handle this) declares variables
+  ye sambhal pocketMoney = 500;
+
+  // 4. Conditionals: 'agar sharam hai' (If you have shame) checks conditions
+  agar sharam hai (pocketMoney < 1000) {
+    jawab de "Dad, thode aur paise dedo?";
+  } warna belt {
+    jawab de "Kaafi paise hai, aish kar.";
+  }
+
+  // 5. Loops: 'jb tak main na bolu' (Until I say so) runs a loop
+  ye sambhal round = 1;
+  jab tak main na bolu (round <= 3) {
+    jawab de "Round lagao:", round;
+    round += 1;
+  }
+
+// 6. Exit Point: Every program ends with 'jao padhai karo' (Go study)
+jao padhai karo

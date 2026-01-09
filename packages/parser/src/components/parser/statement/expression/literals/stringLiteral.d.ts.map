@@ -1,0 +1,1 @@
+{"version":3,"file":"stringLiteral.d.ts","sourceRoot":"","sources":["stringLiteral.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,GAAG,CAAC;AAIxB,OAAO,EAAE,OAAO,EAAE,MAAM,0BAA0B,CAAC;AAEnD,MAAM,CAAC,OAAO,OAAO,aAAc,SAAQ,OAAO;IAChD,UAAU,IAAI,OAAO;CAStB"}

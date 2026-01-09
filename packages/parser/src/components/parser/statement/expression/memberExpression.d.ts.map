@@ -1,0 +1,1 @@
+{"version":3,"file":"memberExpression.d.ts","sourceRoot":"","sources":["memberExpression.ts"],"names":[],"mappings":"AAAA,OAAO,UAAU,MAAM,GAAG,CAAC;AAG3B,OAAO,EAAE,OAAO,EAAE,MAAM,uBAAuB,CAAC;AAEhD,MAAM,CAAC,OAAO,OAAO,gBAAiB,SAAQ,UAAU;IACpD,aAAa,IAAI,OAAO;CAqE3B"}

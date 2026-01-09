@@ -1,0 +1,1 @@
+{"version":3,"file":"booleanLiteral.d.ts","sourceRoot":"","sources":["booleanLiteral.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,GAAG,CAAC;AAIxB,OAAO,EAAE,OAAO,EAAE,MAAM,0BAA0B,CAAC;AAEnD,MAAM,CAAC,OAAO,OAAO,cAAe,SAAQ,OAAO;IACjD,UAAU,IAAI,OAAO;CAStB"}

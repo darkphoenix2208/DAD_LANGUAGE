@@ -1,0 +1,33 @@
+export type ASTNode = {
+    type: string;
+    body?: ASTNode | ASTNode[];
+    expressions?: ASTNode[];
+    expression?: ASTNode;
+    operator?: string;
+    name?: string;
+    left?: ASTNode;
+    right?: ASTNode;
+    value?: string | number | boolean | null | ASTNode;
+    id?: ASTNode;
+    init?: ASTNode | null;
+    declarations?: ASTNode[];
+    test?: ASTNode | null;
+    consequent?: ASTNode | ASTNode[];
+    alternates?: ASTNode[];
+    duration?: ASTNode;
+    tryBlock?: ASTNode[];
+    catchBlock?: ASTNode[];
+    kind?: string;
+    elements?: ASTNode[];
+    object?: ASTNode;
+    property?: ASTNode;
+    computed?: boolean;
+    callee?: ASTNode;
+    arguments?: ASTNode[];
+    superClass?: ASTNode;
+    key?: ASTNode;
+    discriminant?: ASTNode;
+    cases?: ASTNode[];
+    params?: ASTNode[];
+};
+//# sourceMappingURL=nodeTypes.d.ts.map

@@ -1,0 +1,13 @@
+// Factorial of 5
+hi bhai
+    ye sambhal num = 5;
+    ye sambhal fact = 1;
+    ye sambhal i = 1;
+    
+    jab tak bhai (i <= num) {
+        fact = fact * i;
+        i += 1;
+    }
+    
+    bol bhai "Factorial of 5 is: " + fact;
+bye bhai

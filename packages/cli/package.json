@@ -1,0 +1,38 @@
+{
+  "name": "dad-lang-cli",
+  "version": "0.1.0",
+  "description": "CLI for dad-lang",
+  "source": "src/index.ts",
+  "main": "bin/index.js",
+  "bin": {
+    "dadlang": "./bin/index.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "dev": "node --loader ts-node/esm",
+    "build": "tsup src/* --dts --outDir bin"
+  },
+  "keywords": [
+    "programming",
+    "language",
+    "dad-lang",
+    "dl",
+    "javascript",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "ts-jest": "^27.1.2",
+    "tsup": "^5.11.11",
+    "jest": "^27.4.5",
+    "yargs": "^17.3.1",
+    "chalk": "^5.0.0",
+    "@types/jest": "^27.4.0",
+    "dad-lang-config": "*",
+    "dad-lang-tsconfig": "*",
+    "dad-lang-interpreter": "*"
+  }
+}

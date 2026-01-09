@@ -1,0 +1,42 @@
+{
+  "name": "dad-lang-parser",
+  "version": "0.0.2",
+  "description": "Parser for dad-lang",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsup src/* --dts",
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "programming",
+    "language",
+    "bhai-lang",
+    "bl",
+    "javascript",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "string-width": "^5.1.0",
+    "ts-node": "^10.4.0",
+    "ts-jest": "^27.1.2",
+    "tsup": "^5.11.11",
+    "jest": "^27.4.5",
+    "@types/jest": "^27.4.0",
+    "dad-lang-config": "*",
+    "dad-lang-tsconfig": "*"
+  }
+}

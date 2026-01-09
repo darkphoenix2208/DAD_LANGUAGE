@@ -1,0 +1,27 @@
+idhar aao
+  
+  // Test Unused Var (Taana)
+  ye sambhal uselessVar = "Main kisi kaam ka nahi";
+
+  // Test Sleep
+  jawab de "Sone ja raha hun...";
+  bas paanch minute 2000;
+  jawab de "Uth gaya!";
+
+  // Test Try Catch (Bahana)
+  chori chuppe {
+    jawab de "Chori chuppe kaam kar raha hun...";
+    // Trigger error: accessing undefined variable
+    ye sambhal x = unknownVariable; 
+  } pakde gaye toh {
+    jawab de "Pakda gaya! Bahana maar diya.";
+  }
+
+  // Test Mood Meter (Loop)
+  ye sambhal i = 0;
+  jab tak main na bolu (i < 5) {
+    i += 1;
+    jawab de "Padhai kar raha hun... iteration", i;
+  }
+
+jao padhai karo

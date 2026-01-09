@@ -1,0 +1,8 @@
+idhar aao
+  ye sambhal a = 10;
+  agar sharam hai (a < 20) {
+    jawab de "Sahi hai";
+  } warna belt {
+    jawab de "Galat hai";
+  }
+jao padhai karo

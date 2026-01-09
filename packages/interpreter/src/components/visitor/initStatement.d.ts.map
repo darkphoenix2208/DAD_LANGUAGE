@@ -1,0 +1,1 @@
+{"version":3,"file":"initStatement.d.ts","sourceRoot":"","sources":["initStatement.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,GAAG,CAAC;AACxB,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAI1C,MAAM,CAAC,OAAO,OAAO,aAAc,YAAW,OAAO;IACnD,SAAS,CAAC,IAAI,EAAE,OAAO;CAOxB"}

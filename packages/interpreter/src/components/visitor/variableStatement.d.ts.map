@@ -1,0 +1,1 @@
+{"version":3,"file":"variableStatement.d.ts","sourceRoot":"","sources":["variableStatement.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,GAAG,CAAC;AACxB,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAK1C,MAAM,CAAC,OAAO,OAAO,iBAAkB,YAAW,OAAO;IACvD,SAAS,CAAC,IAAI,EAAE,OAAO;CAUxB"}

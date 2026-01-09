@@ -1,0 +1,57 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Pitayi Lang",
+    "patterns": [
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#comments"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.pitayi",
+                    "match": "\\b(hi bhai|bye bhai|bol bhai|agar bhai|nahi to bhai|warna bhai|jab tak bhai|bas kar bhai|agla dekh bhai|bhai ye hai|nalla|sahi|galat|khandaan|ka_khoon_hai|avtaar|khud|sanskar|rishtedaar_aaye|muh_dikhai|bache_kuche|dheere_dheere|ruko_zara)\\b"
+                },
+                {
+                    "name": "storage.type.class.pitayi",
+                    "match": "\\b(khandaan)\\b"
+                },
+                {
+                    "name": "keyword.other.new.pitayi",
+                    "match": "\\b(avtaar)\\b"
+                },
+                {
+                    "name": "variable.language.this.pitayi",
+                    "match": "\\b(khud)\\b"
+                }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.pitayi",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.pitayi",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.pitayi",
+                    "match": "(chugli:|//).*"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.pitayi"
+}

@@ -1,0 +1,37 @@
+{
+    "name": "pitayi-lang-vscode",
+    "displayName": "Pitayi Lang",
+    "description": "Language support for Pitayi Lang (Dad Lang Variant)",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "pitayi",
+                "aliases": [
+                    "Pitayi Lang",
+                    "pitayi",
+                    "belt",
+                    "dad"
+                ],
+                "extensions": [
+                    ".belt",
+                    ".dad"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "pitayi",
+                "scopeName": "source.pitayi",
+                "path": "./pitayi.tmLanguage.json"
+            }
+        ]
+    }
+}

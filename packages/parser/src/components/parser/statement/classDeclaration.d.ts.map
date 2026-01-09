@@ -1,0 +1,1 @@
+{"version":3,"file":"classDeclaration.d.ts","sourceRoot":"","sources":["classDeclaration.ts"],"names":[],"mappings":"AAAA,OAAO,SAAS,MAAM,GAAG,CAAC;AAG1B,OAAO,EAAE,OAAO,EAAE,MAAM,oBAAoB,CAAC;AAI7C,MAAM,CAAC,OAAO,OAAO,gBAAiB,SAAQ,SAAS;IACnD,YAAY,IAAI,OAAO;IAyDvB,OAAO,CAAC,cAAc;CAYzB"}

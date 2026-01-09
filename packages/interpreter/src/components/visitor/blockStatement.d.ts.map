@@ -1,0 +1,1 @@
+{"version":3,"file":"blockStatement.d.ts","sourceRoot":"","sources":["blockStatement.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,GAAG,CAAC;AACxB,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAM1C,MAAM,CAAC,OAAO,OAAO,cAAe,YAAW,OAAO;IACpD,SAAS,CAAC,IAAI,EAAE,OAAO;CA2BxB"}

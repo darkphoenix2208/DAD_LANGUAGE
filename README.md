@@ -1,14 +1,11 @@
-<h1 align="center">Dad Lang 👨‍👧‍👦</h1>
-<p align="center">
-  <b>A toy programming language based on strict Indian Parents.</b><br>
-  <i>"Kyu paida kiya tujhe?" - Compiler</i>
-</p>
+# Dad Lang 👨‍👧‍👦
 
-<br>
+**A toy programming language based on strict Indian Parents.**  
+*"Kyu paida kiya tujhe?" - Compiler*
 
-<div align="center">
-  <img src="https://media.giphy.com/media/l1IY7z6U4M50lFw40/giphy.gif" height="200" alt="Dad Logic" />
-</div>
+---
+
+![Dad Logic](https://media.giphy.com/media/l1IY7z6U4M50lFw40/giphy.gif)
 
 ---
 
@@ -28,22 +25,18 @@ idhar aao
   ye sambhal pocketMoney = 500;
   
   // Const Declaration (Tradition)
-  parampara familyName = "Sharma";
-
-  // Conditionals
-  agar sharam hai (pocketMoney < 1000) {
-    jawab de "Dad, thode aur paise dedo?";
-  } warna belt {
-    jawab de "Kaafi paise hai, aish kar.";
+  ye pakka tradition = "Respect Elders";
+  
+  // Print Statement
+  bol bhai "Pocket money: " + pocketMoney;
+  
+  // If-Else (Discipline)
+  agar bhai pocketMoney > 200 {
+    bol bhai "Kharcha kam kar!";
+  } nahi to bhai {
+    bol bhai "Theek hai, manage kar.";
   }
-
-  // Loops
-  ye sambhal round = 1;
-  jab tak main na bolu (round <= 5) {
-    jawab de "Padhai kar raha hun... iteration", round;
-    round += 1;
-  }
-jao padhai karo
+wapas aa
 ```
 
 ### 2. Run it
@@ -52,101 +45,145 @@ jao padhai karo
 dadlang test.dad
 ```
 
-_(For development, run: `node packages/cli/bin/index.js test.dad`)_
-
 ---
 
-## 📖 Vocabulary
+## 📖 Language Features
 
-See [CHEATSHEET.md](./CHEATSHEET.md) for the full Dictionary (C++ vs Dad Lang).
+### **Khandaan (OOP - Classes & Inheritance)**
 
-| Dad Lang | Meaning (Context) |
-| :--- | :--- |
-| `idhar aao` | Start of Program ("Come here") |
-| `jao padhai karo` | End of Program ("Go study") |
-| `ye sambhal` | Declare Variable ("Handle this") |
-| `parampara` | Declare Constant ("Tradition") |
-| `jawab de` | Print ("Answer me") |
-| `agar sharam hai` | If ("If you have shame") |
-| `nahi to bhai` | Else If |
-| `warna belt` | Else ("Otherwise... belt") |
-| `jab tak main na bolu` | While Loop ("Until I say so") |
-| `bas paanch minute` | Sleep |
-| `chori chuppe` | Try |
-| `pakde gaye toh` | Catch |
-
----
-
-## 🔥 Unique Features (The "Dad" Experience)
-
-Dad Lang isn't just a syntax wrapper; it simulates the **environment** of coding with a strict Dad watching over you.
-
-### 1. Mood Meter 😡 (Runtime Limit)
-Dad has limited patience. If your code runs too long (e.g., infinite loops or > 1000 operations), he **will** explode:
-> *"Din bhar computer pe baitha rehta hai! Band kar isko!" (Runtime Limit Exceeded)*
-
-### 2. High BP 🩸 (Memory Limit)
-Don't stress Dad out with too many things. If you declare more than **15 active variables**, he raises his voice:
-> *"Mera BP badha diya tune! Itna raita kyu failaya hai?" (Variable Limit Exceeded)*
-
-### 3. Parampara 🛐 (Immutability)
-Traditions are sacred. Use `parampara` for constants. If you try to reassign them:
-> *"Sanskaro ki dhajjiya uda di!" (Assignment to constant variable)*
-
-### 4. Sleep ... maybe? 🛌
-You can ask for a break using `bas paanch minute <ms>`.
-**BUT**, there's a **10% chance** Dad will ignore you and say:
-> *"Bahut ho gaya, uth abhi!" (Sleep ignored)*
-
-### 5. Taana Generator 🗣️ (Unused Variables)
-If you declare a variable `x` but never use it, Dad will roast you at the end of the program:
-> *"Ye 'x' kyu paida kiya jab iska koi kaam hi nahi tha?"*
-
----
-
-## 👨‍👩‍👦 Khandaan (OOP)
-
-Dad Lang supports Object-Oriented Programming (OOP) because traditions run in the family.
-
-*   `khandaan`: Class ("Family/Lineage")
-*   `ka_khoon_hai`: Extends ("Has the blood of")
-*   `avtaar`: New ("Incarnation")
-*   `khud`: This ("Self")
-*   `sanskar`: Constructor ("Values/Rituals")
+Create classes with strict rules!
 
 ```javascript
-khandaan Pita {
+hi bhai
+  khandaan Baap {
     sanskar(naam) {
-        khud.naam = naam;
+      khud.naam = naam;
     }
-}
-khandaan Beta ka_khoon_hai Pita {}
-ye sambhal bacha = avtaar Beta("Rohan");
+    
+    advice() {
+      bol bhai khud.naam + " kehte hain: Padhai karo!";
+    }
+  }
+  
+  khandaan Beta ka_khoon_hai Baap {
+    advice() {
+      bol bhai khud.naam + " kehte hain: Thodi party bhi chalti hai!";
+    }
+  }
+  
+  ye sambhal dad = avtaar Baap("Sharma ji");
+  dad.advice();  // Output: Sharma ji kehte hain: Padhai karo!
+  
+  ye sambhal son = avtaar Beta("Rahul");
+  son.advice();  // Output: Rahul kehte hain: Thodi party bhi chalti hai!
+bye bhai
 ```
 
-## ☕ Rishtedaar (Switch-Case)
+### **Rishtedaar (Switch-Case Statements)**
 
-When relatives visit, you have to behave differently based on who it is.
-
-*   `rishtedaar_aaye`: Switch ("Relatives came")
-*   `muh_dikhai`: Case ("Showing face ceremony")
-*   `bache_kuche`: Default ("Leftovers")
+Handle situations like family meetings:
 
 ```javascript
-rishtedaar_aaye (relative) {
-    muh_dikhai "Bua": jawab de "Pair choo le beta";
-    bache_kuche: jawab de "Hi uncle";
-}
+hi bhai
+  ye sambhal day = "somwar";
+  
+  rishtedaar_aaye (day) {
+    muh_dikhai "somwar": 
+      bol bhai "Office jana hai";
+    
+    muh_dikhai "ravivaar": 
+      bol bhai "Ghar pe aaram";
+    
+    bache_kuche: 
+      bol bhai "Kaam hai bhai!";
+  }
+bye bhai
 ```
 
-## 🛒 Rashid Pani & Chugli
+### **Hisaab (Arrays)**
 
-*   **Standard Library**: `kismat()` (random), `tol_mol(val)` (round), `taarik_pe_taarik()` (date).
-*   **Comments**: Start lines with `chugli:` to gossip privately (ignored by compiler).
+Manage lists like Dad manages expenses:
 
-## 🧮 Hisaab (Arrays)
+```javascript
+hi bhai
+  ye sambhal kharche = [100, 200, 150];
+  
+  bol bhai "Total items: " + kharche.aukaat;  // length
+  kharche.thoos_de(50);  // push
+  kharche.nikal_fek();   // pop
+bye bhai
+```
 
-*   `ye sambhal list = [1, 2, 3];`
-*   Methods: `.aukaat` (length), `.thoos_de(val)` (push), `.nikal_fek()` (pop).
+### **Rashan Pani (Standard Library)**
+
+Built-in functions for daily tasks:
+
+*   `kismat()` - Random number (0-1)
+*   `tol_mol(str, pattern)` - String match
+*   `taarik_pe_taarik(ms)` - Sleep/delay
+
+---
+
+## 🎯 Full Vocabulary
+
+| **Dad Lang**        | **JavaScript Equivalent** | **Description**               |
+|---------------------|---------------------------|-------------------------------|
+| `hi bhai`           | `{`                       | Program start                 |
+| `bye bhai`          | `}`                       | Program end                   |
+| `bol bhai`          | `console.log()`           | Print statement               |
+| `ye sambhal`        | `let`                     | Variable declaration          |
+| `ye pakka`          | `const`                   | Constant declaration          |
+| `nalla`             | `null`                    | Null value                    |
+| `sahi`              | `true`                    | Boolean true                  |
+| `galat`             | `false`                   | Boolean false                 |
+| `agar bhai`         | `if`                      | If statement                  |
+| `nahi to bhai`      | `else if`                 | Else-if statement             |
+| `warna bhai`        | `else`                    | Else statement                |
+| `jab tak bhai`      | `while`                   | While loop                    |
+| `bas kar bhai`      | `break`                   | Break statement               |
+| `agla dekh bhai`    | `continue`                | Continue statement            |
+| `khandaan`          | `class`                   | Class declaration             |
+| `ka_khoon_hai`      | `extends`                 | Inheritance                   |
+| `avtaar`            | `new`                     | Object instantiation          |
+| `khud`              | `this`                    | This reference                |
+| `sanskar`           | `constructor`             | Constructor method            |
+| `rishtedaar_aaye`   | `switch`                  | Switch statement              |
+| `muh_dikhai`        | `case`                    | Case label                    |
+| `bache_kuche`       | `default`                 | Default case                  |
+| `dheere_dheere`     | `async`                   | Async function                |
+| `ruko_zara`         | `await`                   | Await expression              |
+
+---
+
+## 🎓 Examples
+
+Check out the `examples/` folder:
+*   `fizzbuzz.belt` - Classic FizzBuzz
+*   `factorial.belt` - Recursive factorial
+*   `inheritance.belt` - OOP inheritance demo
+
+---
+
+## 🛠️ Development
+
+```bash
+# Clone the repository
+git clone https://github.com/darkphoenix2208/DAD_LANGUAGE.git
+
+# Install dependencies
+npm install
+
+# Build packages
+npm run build
+
+# Run tests  
+npm test
+```
+
+---
+
+## 📝 License
+
+MIT License - Copyright (c) 2026
 
 ---

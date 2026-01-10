@@ -89,9 +89,7 @@ export default class Scope {
 
   declare(identifier: string, value: unknown, isConst: boolean = false, shouldCrashOnLimit: boolean = true) {
     if (this._variables.has(identifier)) {
-      throw new RuntimeException(
-        `Variable "${identifier}" pehle se exist karta hai bhai. Check karle.`
-      );
+      `Variable "${identifier}" pehle se exist karta hai gadhe. Check karle.`
     }
 
     // High BP Check

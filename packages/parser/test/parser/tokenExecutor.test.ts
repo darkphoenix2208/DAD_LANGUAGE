@@ -12,7 +12,7 @@ afterEach(() => {
 
 test("test eatTokenAndForwardLookahead success", () => {
   const lookahead = {
-    type: TokenTypes.HI_BHAI_TYPE,
+    type: TokenTypes.PROGRAM_START,
     value: "idhar aao",
   };
 
@@ -23,9 +23,9 @@ test("test eatTokenAndForwardLookahead success", () => {
   tokenExecutor.setLookahead(lookahead);
 
   expect(
-    tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.HI_BHAI_TYPE)
+    tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.PROGRAM_START)
   ).toStrictEqual({
-    type: TokenTypes.HI_BHAI_TYPE,
+    type: TokenTypes.PROGRAM_START,
     value: "idhar aao",
   });
 
@@ -40,7 +40,7 @@ test("test eatTokenAndForwardLookahead with null lookahead should throw exceptio
   tokenExecutor.setLookahead(null);
 
   expect(() =>
-    tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.HI_BHAI_TYPE)
+    tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.PROGRAM_START)
   ).toThrow(SyntaxError);
 
   expect(tokenizerMock.getNextToken).toHaveBeenCalledTimes(0);
@@ -48,7 +48,7 @@ test("test eatTokenAndForwardLookahead with null lookahead should throw exceptio
 
 test("test eatTokenAndForwardLookahead with token not matching the expected token type lookahead should throw exception", () => {
   const lookahead = {
-    type: TokenTypes.BYE_BHAI_TYPE,
+    type: TokenTypes.PROGRAM_END,
     value: "jao padhai karo",
   };
 
@@ -59,7 +59,7 @@ test("test eatTokenAndForwardLookahead with token not matching the expected toke
   tokenExecutor.setLookahead(lookahead);
 
   expect(() =>
-    tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.HI_BHAI_TYPE)
+    tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.PROGRAM_START)
   ).toThrow(SyntaxError);
 
   expect(tokenizerMock.getNextToken).toHaveBeenCalledTimes(0);
@@ -67,7 +67,7 @@ test("test eatTokenAndForwardLookahead with token not matching the expected toke
 
 test("test getLookahead success", () => {
   const lookahead = {
-    type: TokenTypes.BYE_BHAI_TYPE,
+    type: TokenTypes.PROGRAM_END,
     value: "jao padhai karo",
   };
 

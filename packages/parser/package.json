@@ -17,14 +17,14 @@
   },
   "scripts": {
     "dev": "ts-node src/index.ts",
-    "build": "tsup src/* --dts",
+    "build": "tsup src/index.ts --dts",
     "test": "jest --coverage"
   },
   "keywords": [
     "programming",
     "language",
-    "bhai-lang",
-    "bl",
+    "dad-lang",
+    "dadlang",
     "javascript",
     "typescript"
   ],

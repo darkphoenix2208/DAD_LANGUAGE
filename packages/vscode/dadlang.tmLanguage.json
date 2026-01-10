@@ -23,19 +23,19 @@
             "patterns": [
                 {
                     "name": "keyword.control.dadlang",
-                    "match": "\\b(hi bhai|bye bhai|idhar aao|jao padhai karo|agar bhai|agar sharam hai|nahi to bhai|warna bhai|warna belt|jab tak bhai|jab tak main na bolu|jab main tumhari umar ka tha|bas kar bhai|bas ho gaya|agla dekh bhai|rishtedaar_aaye|muh_dikhai|bache_kuche)\\b"
+                    "match": "\\b(idhar aao|jao padhai karo|agar sharam hai|nahi to bhai|warna belt|jab tak main na bolu|jab main tumhari umar ka tha|bas ho gaya|rishtedaar_aaye|muh_dikhai|bache_kuche)\\b"
                 },
                 {
                     "name": "storage.type.dadlang",
-                    "match": "\\b(ye sambhal|ye pakka|parampara|khandaan)\\b"
+                    "match": "\\b(ye sambhal|parampara|khandaan)\\b"
                 },
                 {
                     "name": "support.function.dadlang",
-                    "match": "\\b(bol bhai|jawab de|bas paanch minute|kismat|tol_mol|taarik_pe_taarik)\\b"
+                    "match": "\\b(jawab de|bas paanch minute|kismat|tol_mol|taarik_pe_taarik)\\b"
                 },
                 {
                     "name": "constant.language.dadlang",
-                    "match": "\\b(sahi|galat|nalla|sharmaji_ka_beta|nalayak|khaali_dimaag)\\b"
+                    "match": "\\b(sahi|galat|nalla)\\b"
                 },
                 {
                     "name": "keyword.other.new.dadlang",

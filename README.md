@@ -92,13 +92,13 @@
 
 | Feature | Keyword | Example Usage | Status |
 |---------|---------|---------------|--------|
-| 🏁 **Program Start** | `hi bhai` | Program entry point | ✅ |
-| 🏁 **Program End** | `bye bhai` | Program exit point | ✅ |
-| 📢 **Print** | `bol bhai` | `bol bhai "Hello";` | ✅ |
+| 🏁 **Program Start** | `idhar aao` | Program entry point | ✅ |
+| 🏁 **Program End** | `jao padhai karo` | Program exit point | ✅ |
+| 📢 **Print** | `jawab de` | `jawab de "Hello";` | ✅ |
 | 💾 **Variable** | `ye sambhal` | `ye sambhal x = 10;` | ✅ |
-| 🔒 **Constant** | `ye pakka` | `ye pakka PI = 3.14;` | ✅ |
-| 🔀 **If-Else** | `agar bhai` | Conditional logic | ✅ |
-| ♻️ **Loops** | `jab tak bhai` | While loops | ✅ |
+| 🔒 **Constant** | `parampara` | `parampara PI = 3.14;` | ✅ |
+| 🔀 **If-Else** | `agar sharam hai` | Conditional logic | ✅ |
+| ♻️ **Loops** | `jab tak main na bolu` | While loops | ✅ |
 | 🏛️ **Classes** | `khandaan` | OOP support | ✅ |
 | 👨‍👦 **Inheritance** | `ka_khoon_hai` | Class extension | ✅ |
 | 🆕 **New Object** | `avtaar` | Instantiation | ✅ |
@@ -136,16 +136,16 @@ npm run build
 ### 🎮 Run Your First Program
 
 ```javascript
-hi bhai
-    bol bhai "Padhai kar raha hun!";
+idhar aao
+    jawab de "Padhai kar raha hun!";
     
     ye sambhal marks = 95;
-    agar bhai marks > 90 {
-        bol bhai "Shabash beta!";
-    } warna bhai {
-        bol bhai "Aur mehnat karo!";
+    agar sharam hai (marks > 90) {
+        jawab de "Shabash beta!";
+    } warna belt {
+        jawab de "Aur mehnat karo!";
     }
-bye bhai
+jao padhai karo
 ```
 
 **Save as `test.dad` and run:**

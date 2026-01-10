@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import InterpreterModule from "dad-lang-interpreter";
+import interpreter from "dad-lang-interpreter";
 
 interface PlaygroundProps { }
 
 const Playground: React.FC<PlaygroundProps> = () => {
-    const [code, setCode] = useState(`hi bhai
-    bol bhai "Hello from Dad Lang!";
+    const [code, setCode] = useState(`idhar aao
+    jawab de "Hello from Dad Lang!";
     
     ye sambhal x = 10;
     ye sambhal y = 20;
-    bol bhai "Sum: " + (x + y);
-bye bhai`);
+    jawab de "Sum: " + (x + y);
+jao padhai karo`);
 
     const [output, setOutput] = useState<string[]>([]);
     const [isRunning, setIsRunning] = useState(false);
@@ -27,7 +27,6 @@ bye bhai`);
         };
 
         try {
-            const interpreter = InterpreterModule.getInterpreter();
             interpreter.interpret(code);
             setOutput(logs);
         } catch (error: any) {

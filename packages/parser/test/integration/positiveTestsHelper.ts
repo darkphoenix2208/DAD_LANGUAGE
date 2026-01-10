@@ -451,9 +451,9 @@ export const ExpressionsTests = [
   {
     name: `logical "&&" test in variable declaration, should success`,
     input: `
-        hi bhai
-        bhai ye hai a = b && d;
-        bye bhai;
+        idhar aao
+        ye sambhal a = b && d;
+        jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"LogicalExpression","operator":"&&","left":{"type":"IdentifierExpression","name":"b"},"right":{"type":"IdentifierExpression","name":"d"}}}]}]}}`,
   },
@@ -461,45 +461,45 @@ export const ExpressionsTests = [
   {
     name: `logical "||" test with sahi galat, should success`,
     input: `
-        hi bhai
-        agar bhai (sahi || galat);
-        bye bhai;
+        idhar aao
+        agar sharam hai (sahi || galat);
+        jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"LogicalExpression","operator":"||","left":{"type":"BooleanLiteral","value":"sahi"},"right":{"type":"BooleanLiteral","value":"galat"}},"consequent":{"type":"EmptyStatement"},"alternates":[]}]}}`,
   },
   {
     name: `logical "||" test with expression, should success`,
     input: `
-        hi bhai
-        agar bhai (a + b || d);
-        bye bhai;
+        idhar aao
+        agar sharam hai (a + b || d);
+        jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"LogicalExpression","operator":"||","left":{"type":"BinaryExpression","operator":"+","left":{"type":"IdentifierExpression","name":"a"},"right":{"type":"IdentifierExpression","name":"b"}},"right":{"type":"IdentifierExpression","name":"d"}},"consequent":{"type":"EmptyStatement"},"alternates":[]}]}}`,
   },
   {
     name: `logical "||" test in variable declaration, should success`,
     input: `
-        hi bhai
-        bhai ye hai a = b || d;
-        bye bhai;
+        idhar aao
+        ye sambhal a = b || d;
+        jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"LogicalExpression","operator":"||","left":{"type":"IdentifierExpression","name":"b"},"right":{"type":"IdentifierExpression","name":"d"}}}]}]}}`,
   },
   {
     name: `identifier name starting with "sahi", should success`,
     input: `
-      hi bhai
-      bhai ye hai sahiValue = sahi;
-      bye bhai
+      idhar aao
+      ye sambhal sahiValue = sahi;
+      jao padhai karo
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"sahiValue"},"init":{"type":"BooleanLiteral","value":"sahi"}}]}]}}`,
   },
   {
     name: `identifier name starting with "galat", should success`,
     input: `
-      hi bhai
-      bhai ye hai galatValue = 10;
-      bye bhai
+      idhar aao
+      ye sambhal galatValue = 10;
+      jao padhai karo
     `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"galatValue"},"init":{"type":"NumericLiteral","value":10}}]}]}}`,
   },
@@ -509,146 +509,146 @@ export const IfStatementTests = [
   {
     name: "if statement success test - 1: only if",
     input: `
-    hi bhai
-    agar bhai (sahi) {
+    idhar aao
+    agar sharam hai (sahi) {
     }
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]},"alternates":[]}]}}`,
   },
   {
     name: "if statement success test - 2: if else both",
     input: `
-    hi bhai
-    agar bhai (sahi) {
+    idhar aao
+    agar sharam hai (sahi) {
     } warna belt {
 
     }
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]},"alternates":[{"type":"BlockStatement","body":[]}]}]}}`,
   },
   {
     name: "if statement success test - 3: if only with comarison condn",
     input: `
-    hi bhai
-    bhai ye hai x = 9;
-    agar bhai (x >= 9) {
+    idhar aao
+    ye sambhal x = 9;
+    agar sharam hai (x >= 9) {
       x = 5;
     } 
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"x"},"init":{"type":"NumericLiteral","value":9}}]},{"type":"IfStatement","test":{"type":"BinaryExpression","operator":">=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"consequent":{"type":"BlockStatement","body":[{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":5}}}]},"alternates":[]}]}}`,
   },
   {
     name: "if statement success test - 4: if only with equality condn",
     input: `
-    hi bhai
-    bhai ye hai x = 9;
-    agar bhai (x == 9) {
+    idhar aao
+    ye sambhal x = 9;
+    agar sharam hai (x == 9) {
       x = 5;
     } 
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"x"},"init":{"type":"NumericLiteral","value":9}}]},{"type":"IfStatement","test":{"type":"BinaryExpression","operator":"==","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"consequent":{"type":"BlockStatement","body":[{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":5}}}]},"alternates":[]}]}}`,
   },
   {
     name: "if statement success test - 4: if only with equality condn",
     input: `
-    hi bhai
-    bhai ye hai x = 9;
-    agar bhai (x == 9) {
+    idhar aao
+    ye sambhal x = 9;
+    agar sharam hai (x == 9) {
       x = 5;
     } 
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"x"},"init":{"type":"NumericLiteral","value":9}}]},{"type":"IfStatement","test":{"type":"BinaryExpression","operator":"==","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"consequent":{"type":"BlockStatement","body":[{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":5}}}]},"alternates":[]}]}}`,
   },
   {
     name: "if statement success test - 5: if only with inequality condn",
     input: `
-    hi bhai
-    bhai ye hai x = 9;
-    agar bhai (x != 9) {
+    idhar aao
+    ye sambhal x = 9;
+    agar sharam hai (x != 9) {
       x = 5;
     } 
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"x"},"init":{"type":"NumericLiteral","value":9}}]},{"type":"IfStatement","test":{"type":"BinaryExpression","operator":"!=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"consequent":{"type":"BlockStatement","body":[{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":5}}}]},"alternates":[]}]}}`,
   },
   {
     name: "if statement success test - 6: else with only expression statement",
     input: `
-    hi bhai
-    bhai ye hai x = 9;
-    agar bhai (x != 9) {
+    idhar aao
+    ye sambhal x = 9;
+    agar sharam hai (x != 9) {
       x = 5;
     } warna belt (x >= 9);
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"x"},"init":{"type":"NumericLiteral","value":9}}]},{"type":"IfStatement","test":{"type":"BinaryExpression","operator":"!=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"consequent":{"type":"BlockStatement","body":[{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":5}}}]},"alternates":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":">=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}}}]}]}}`,
   },
   {
     name: "if statement success test - 7: with block",
     input: `
-    hi bhai
-    bhai ye hai x = 9;
-    agar bhai (x != 9)
+    idhar aao
+    ye sambhal x = 9;
+    agar sharam hai (x != 9)
       x = 5;
     warna belt (x >= 9);
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"x"},"init":{"type":"NumericLiteral","value":9}}]},{"type":"IfStatement","test":{"type":"BinaryExpression","operator":"!=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"consequent":{"type":"ExpressionStatement","expression":{"type":"AssignmentExpression","operator":"=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":5}}},"alternates":[{"type":"ExpressionStatement","expression":{"type":"BinaryExpression","operator":">=","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}}}]}]}}`,
   },
   {
     name: "else-if statement success test - 1: if-else-if one level ladder",
     input: `
-    hi bhai
-    agar bhai (sahi) {
+    idhar aao
+    agar sharam hai (sahi) {
     } nahi to bhai (sahi) {
     }
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]},"alternates":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}}]}]}}`
   },
   {
     name: "else-if statement success test - 2: if-else-if one level ladder with else",
     input: `
-    hi bhai
-    agar bhai (sahi) {
+    idhar aao
+    agar sharam hai (sahi) {
     } nahi to bhai (sahi) {
     } warna belt {
     }
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]},"alternates":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"BlockStatement","body":[]}]}]}}`
   },
   {
     name: "else-if statement success test - 3: if-else-if multiple levels ladder",
     input: `
-    hi bhai
-    agar bhai (sahi) {
+    idhar aao
+    agar sharam hai (sahi) {
     } nahi to bhai (sahi) {
     } nahi to bhai (sahi) {
     } nahi to bhai (sahi) {
     } nahi to bhai (sahi) {
     }
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]},"alternates":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}}]}]}}`
   },
   {
     name: "else-if statement success test - 4: if-else-if multiple levels ladder with else",
     input: `
-    hi bhai
-    agar bhai (sahi) {
+    idhar aao
+    agar sharam hai (sahi) {
     } nahi to bhai (sahi) {
     } nahi to bhai (sahi) {
     } nahi to bhai (sahi) {
     } nahi to bhai (sahi) {
     } warna belt {
     }
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]},"alternates":[{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"IfStatement","test":{"type":"BooleanLiteral","value":"sahi"},"consequent":{"type":"BlockStatement","body":[]}},{"type":"BlockStatement","body":[]}]}]}}`
   },
@@ -658,66 +658,66 @@ export const WhileStatementTests = [
   {
     name: "while statement success test: only if",
     input: `
-    hi bhai
-    jab tak bhai (sahi) {
+    idhar aao
+    jab tak main na bolu (sahi) {
     }
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"WhileStatement","test":{"type":"BooleanLiteral","value":"sahi"},"body":{"type":"BlockStatement","body":[]}}]}}`,
   },
   {
     name: "while statement success test: with some body",
     input: `
-    hi bhai
-    jab tak bhai (x > 9) {
-      bol bhai "hello";
+    idhar aao
+    jab tak main na bolu (x > 9) {
+      jawab de "hello";
     }
-    bye bhai;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"WhileStatement","test":{"type":"BinaryExpression","operator":">","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"body":{"type":"BlockStatement","body":[{"type":"PrintStatement","expressions":[{"type":"StringLiteral","value":"hello"}]}]}}]}}`,
   },
   {
     name: "while statement success test: with single statement",
     input: `
-    hi bhai
-    jab tak bhai (x > 9)
-      bol bhai "hello";
-    bye bhai;
+    idhar aao
+    jab tak main na bolu (x > 9)
+      jawab de "hello";
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"WhileStatement","test":{"type":"BinaryExpression","operator":">","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"body":{"type":"PrintStatement","expressions":[{"type":"StringLiteral","value":"hello"}]}}]}}`,
   },
   {
     name: "while statement success test: with single statement as body and statement outside of body",
     input: `
-    hi bhai
-    jab tak bhai (x > 9)
-      bol bhai "hello";
-    bhai ye hai a = 90;
-    bye bhai;
+    idhar aao
+    jab tak main na bolu (x > 9)
+      jawab de "hello";
+    ye sambhal a = 90;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"WhileStatement","test":{"type":"BinaryExpression","operator":">","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"body":{"type":"PrintStatement","expressions":[{"type":"StringLiteral","value":"hello"}]}},{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"NumericLiteral","value":90}}]}]}}`,
   },
   {
     name: "while statement success test: with break statement",
     input: `
-    hi bhai
-    jab tak bhai (x > 9) {
+    idhar aao
+    jab tak main na bolu (x > 9) {
       bas kar bhai;
     }
-    bhai ye hai a = 90;
-    bye bhai;
+    ye sambhal a = 90;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"WhileStatement","test":{"type":"BinaryExpression","operator":">","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"body":{"type":"BlockStatement","body":[{"type":"BreakStatement"},{"type":"EmptyStatement"}]}},{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"NumericLiteral","value":90}}]}]}}`,
   },
   {
     name: "while statement success test: with continue statement",
     input: `
-    hi bhai
-    jab tak bhai (x > 9) {
+    idhar aao
+    jab tak main na bolu (x > 9) {
       agla dekh bhai;
     }
-    bhai ye hai a = 90;
-    bye bhai;
+    ye sambhal a = 90;
+    jao padhai karo;
       `,
     output: `{"type":"Program","body":{"type":"InitStatement","body":[{"type":"WhileStatement","test":{"type":"BinaryExpression","operator":">","left":{"type":"IdentifierExpression","name":"x"},"right":{"type":"NumericLiteral","value":9}},"body":{"type":"BlockStatement","body":[{"type":"ContinueStatement"},{"type":"EmptyStatement"}]}},{"type":"VariableStatement","declarations":[{"type":"VariableDeclaration","id":{"type":"IdentifierExpression","name":"a"},"init":{"type":"NumericLiteral","value":90}}]}]}}`,
   },

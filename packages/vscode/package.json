@@ -1,7 +1,7 @@
 {
-    "name": "pitayi-lang-vscode",
-    "displayName": "Pitayi Lang",
-    "description": "Language support for Pitayi Lang (Dad Lang Variant)",
+    "name": "dad-lang-vscode",
+    "displayName": "Dad Lang",
+    "description": "Language support for Dad Lang",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.75.0"
@@ -12,25 +12,25 @@
     "contributes": {
         "languages": [
             {
-                "id": "pitayi",
+                "id": "dadlang",
                 "aliases": [
-                    "Pitayi Lang",
-                    "pitayi",
-                    "belt",
-                    "dad"
+                    "Dad Lang",
+                    "dadlang",
+                    "dad",
+                    "belt"
                 ],
                 "extensions": [
-                    ".belt",
-                    ".dad"
+                    ".dad",
+                    ".belt"
                 ],
                 "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [
             {
-                "language": "pitayi",
-                "scopeName": "source.pitayi",
-                "path": "./pitayi.tmLanguage.json"
+                "language": "dadlang",
+                "scopeName": "source.dadlang",
+                "path": "./dadlang.tmLanguage.json"
             }
         ]
     }

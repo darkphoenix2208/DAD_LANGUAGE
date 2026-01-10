@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import interpreter from "bhai-lang-interpreter";
+import interpreter from "dad-lang-interpreter";
 
 import { sendEvents } from "../../helpers";
 
@@ -9,29 +9,29 @@ import Terminal from "./Terminal";
 
 
 const initialCode = `
-hi bhai
- bol bhai "Hello World";
+idhar aao
+ jawab de "Hello World";
  
-  bhai ye hai a = 3;
-  bhai ye hai b = 0;
+  ye sambhal a = 3;
+  ye sambhal b = 0;
 
-  jab tak bhai (b < 5) {
-    bol bhai b;
+  jab tak main na bolu (b < 5) {
+    jawab de b;
 
-    agar bhai (b == a) {
-      bol bhai "b is equal to a";
+    agar sharam hai (b == a) {
+      jawab de "b is equal to a";
     } nahi to bhai (b == 0) {
-      bol bhai "b is equal to zero";
+      jawab de "b is equal to zero";
     }
 
     b += 1;
   }
 
-bye bhai
+jao padhai karo
 `;
 
 const Code = (props: Props) => {
-  const {} = props;
+  const { } = props;
   const [code, setCode] = useState(initialCode);
   const [output, setOutput] = useState<{ value: string; isError: boolean }[]>(
     []
@@ -61,7 +61,7 @@ const Code = (props: Props) => {
       }
     }
 
-    sendEvents("CodeExecuted", {success: isExecusionSuccess});
+    sendEvents("CodeExecuted", { success: isExecusionSuccess });
 
     setIsSuccess(isExecusionSuccess);
     setOutput(outputList);

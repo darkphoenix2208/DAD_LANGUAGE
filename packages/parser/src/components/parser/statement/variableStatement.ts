@@ -24,7 +24,7 @@ export default class VariableStatement extends Statement {
       this._tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.PARAMPARA);
     } else {
       this._tokenExecutor.eatTokenAndForwardLookahead(
-        TokenTypes.BHAI_YE_HAI_TYPE
+        TokenTypes.VARIABLE_DECLARATION
       );
     }
 

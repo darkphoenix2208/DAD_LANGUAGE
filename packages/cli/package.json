@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "dev": "node --loader ts-node/esm",
-    "build": "tsup src/* --dts --outDir bin"
+    "build": "tsup src/index.ts --dts --outDir bin"
   },
   "keywords": [
     "programming",

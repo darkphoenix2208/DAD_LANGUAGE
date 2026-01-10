@@ -15,27 +15,29 @@ export const TokenTypes = {
   AWAIT: "ruko_zara",
 
 
-  HI_BHAI_TYPE: "idhar aao",
+  PROGRAM_START: "idhar aao",
 
-  BYE_BHAI_TYPE: "jao padhai karo",
+  PROGRAM_END: "jao padhai karo",
 
-  BOL_BHAI_TYPE: "jawab de",
+  PRINT: "jawab de",
 
-  BHAI_YE_HAI_TYPE: "ye sambhal",
+  VARIABLE_DECLARATION: "ye sambhal",
 
-  AGAR_BHAI: "agar sharam hai",
+  IF_CONDITION: "agar sharam hai",
 
-  WARNA_BHAI: "warna belt",
+  ELSE_IF_CONDITION: "nahi to bhai",
+
+  ELSE_CONDITION: "warna belt",
 
   PARAMPARA: "parampara",
 
-  NAHI_TO_BHAI: "nahi to bhai", // Assuming this one wasn't explicitly asked to change, but best to keep it consistent or leave as is if no instruction. User didn't specify 'nahi to bhai'. I will leave it or infer 'nahi to belt'? User said "Else Condition: warna belt". But 'nahi to bhai' is 'else if'. I will check the user prompt again. User provided: "Else Condition: warna belt". "If Condition: agar sharam hai". User missed "else if". I will leave "Else If" as "nahi to bhai" for now to avoid breaking unrequested parts, OR I can make a guess 'nahi to belt'. Given instructions are specific, I will stick to what was asked. BUT wait, 'warna bhai' is typically 'else'. 'nahi to bhai' is 'else if'. I'll stick to 'nahi to bhai' as to not overstep, or maybe change 'bhai' to something else? The user didn't ask for it. I will leave the keys as is but change values where requested.
+  NAHI_TO_BHAI: "nahi to bhai",
 
-  JAB_TAK_BHAI: "jab tak main na bolu",
+  WHILE_LOOP: "jab tak main na bolu",
 
-  BAS_KAR_BHAI: "bas kar bhai", // User didn't specify break
+  BREAK_STATEMENT: "bas kar bhai",
 
-  AGLA_DEKH_BHAI: "agla dekh bhai", // User didn't specify continue
+  CONTINUE_STATEMENT: "agla dekh bhai",
 
   NALLA_TYPE: "NALLA",
 
@@ -115,13 +117,13 @@ export const SPEC = [
   { regex: /^:/, tokenType: TokenTypes.COLON_TYPE },
 
   //Keywords
-  { regex: /^\bidhar aao\b/, tokenType: TokenTypes.HI_BHAI_TYPE },
-  { regex: /^\bjao padhai karo\b/, tokenType: TokenTypes.BYE_BHAI_TYPE },
-  { regex: /^\bjawab de\b/, tokenType: TokenTypes.BOL_BHAI_TYPE },
-  { regex: /^\bye sambhal\b/, tokenType: TokenTypes.BHAI_YE_HAI_TYPE },
-  { regex: /^\bagar sharam hai\b/, tokenType: TokenTypes.AGAR_BHAI },
-  { regex: /^\bnahi to bhai\b/, tokenType: TokenTypes.NAHI_TO_BHAI },
-  { regex: /^\bwarna belt\b/, tokenType: TokenTypes.WARNA_BHAI },
+  { regex: /^\bidhar aao\b/, tokenType: TokenTypes.PROGRAM_START },
+  { regex: /^\bjao padhai karo\b/, tokenType: TokenTypes.PROGRAM_END },
+  { regex: /^\bjawab de\b/, tokenType: TokenTypes.PRINT },
+  { regex: /^\bye sambhal\b/, tokenType: TokenTypes.VARIABLE_DECLARATION },
+  { regex: /^\bagar sharam hai\b/, tokenType: TokenTypes.IF_CONDITION },
+  { regex: /^\bnahi to bhai\b/, tokenType: TokenTypes.ELSE_IF_CONDITION },
+  { regex: /^\bwarna belt\b/, tokenType: TokenTypes.ELSE_CONDITION },
   { regex: /^\bparampara\b/, tokenType: TokenTypes.PARAMPARA },
   { regex: /^\bkhandaan\b/, tokenType: TokenTypes.CLASS },
   { regex: /^\bka_khoon_hai\b/, tokenType: TokenTypes.EXTENDS },
@@ -133,10 +135,10 @@ export const SPEC = [
   { regex: /^\bbache_kuche\b/, tokenType: TokenTypes.DEFAULT },
   { regex: /^\bdheere_dheere\b/, tokenType: TokenTypes.ASYNC },
   { regex: /^\bruko_zara\b/, tokenType: TokenTypes.AWAIT },
-  { regex: /^\bkhaali_dimaag\b/, tokenType: TokenTypes.NALLA_TYPE },
-  { regex: /^\bjab tak main na bolu\b/, tokenType: TokenTypes.JAB_TAK_BHAI },
-  { regex: /^\bbas kar bhai\b/, tokenType: TokenTypes.BAS_KAR_BHAI },
-  { regex: /^\bagla dekh bhai\b/, tokenType: TokenTypes.AGLA_DEKH_BHAI },
+  { regex: /^\bnalla\b/, tokenType: TokenTypes.NALLA_TYPE },
+  { regex: /^\bjab tak main na bolu\b/, tokenType: TokenTypes.WHILE_LOOP },
+  { regex: /^\bbas kar bhai\b/, tokenType: TokenTypes.BREAK_STATEMENT },
+  { regex: /^\bagla dekh bhai\b/, tokenType: TokenTypes.CONTINUE_STATEMENT },
   { regex: /^\bchori chuppe\b/, tokenType: TokenTypes.TRY },
   { regex: /^\bpakde gaye toh\b/, tokenType: TokenTypes.CATCH },
   { regex: /^\bbas paanch minute\b/, tokenType: TokenTypes.SLEEP },
@@ -145,8 +147,8 @@ export const SPEC = [
   { regex: /^[+-]?([\d]*[.])?[\d]+/, tokenType: TokenTypes.NUMBER_TYPE },
 
   // Boolean
-  { regex: /^\bsharmaji_ka_beta\b/, tokenType: TokenTypes.BOOLEAN_TYPE },
-  { regex: /^\bnalayak\b/, tokenType: TokenTypes.BOOLEAN_TYPE },
+  { regex: /^\bsahi\b/, tokenType: TokenTypes.BOOLEAN_TYPE },
+  { regex: /^\bgalat\b/, tokenType: TokenTypes.BOOLEAN_TYPE },
 
   // Identifier
   { regex: /^\w+/, tokenType: TokenTypes.IDENTIFIER_TYPE },

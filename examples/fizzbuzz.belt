@@ -1,16 +1,16 @@
 // FizzBuzz logic
-hi bhai
+idhar aao
     ye sambhal n = 1;
-    jab tak bhai (n <= 20) {
-        agar bhai (n % 15 == 0) {
-            bol bhai "FizzBuzz";
-        } nahi to bhai (n % 3 == 0) {
-            bol bhai "Fizz";
-        } nahi to bhai (n % 5 == 0) {
-            bol bhai "Buzz";
-        } warna bhai {
-            bol bhai n;
+    jab tak main na bolu (n <= 20) {
+        agar sharam hai (n % 15 == 0) {
+            jawab de "FizzBuzz";
+        } nahi to (n % 3 == 0) {
+            jawab de "Fizz";
+        } nahi to (n % 5 == 0) {
+            jawab de "Buzz";
+        } warna belt {
+            jawab de n;
         }
         n += 1;
     }
-bye bhai
+jao padhai karo

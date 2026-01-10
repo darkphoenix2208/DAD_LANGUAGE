@@ -1,1 +1,0 @@
-{"version":3,"file":"printStatement.d.ts","sourceRoot":"","sources":["printStatement.ts"],"names":[],"mappings":"AAAA,OAAO,SAAS,MAAM,GAAG,CAAC;AAI1B,OAAO,EAAE,OAAO,EAAE,MAAM,oBAAoB,CAAC;AAK7C,MAAM,CAAC,OAAO,OAAO,cAAe,SAAQ,SAAS;IACnD,YAAY,IAAI,OAAO;IAavB,OAAO,CAAC,kBAAkB;IAa1B,OAAO,CAAC,cAAc;CAKvB"}

@@ -25,19 +25,19 @@ export const TokenTypes = {
 
   IF_CONDITION: "agar sharam hai",
 
-  ELSE_IF_CONDITION: "nahi to bhai",
+  ELSE_IF_CONDITION: "nahi to",
 
   ELSE_CONDITION: "warna belt",
 
   PARAMPARA: "parampara",
 
-  NAHI_TO_BHAI: "nahi to bhai",
+  NAHI_TO_BHAI: "nahi to",
 
   WHILE_LOOP: "jab tak main na bolu",
 
-  BREAK_STATEMENT: "bas kar bhai",
+  BREAK_STATEMENT: "bas kar",
 
-  CONTINUE_STATEMENT: "agla dekh bhai",
+  CONTINUE_STATEMENT: "agla dekh",
 
   NALLA_TYPE: "NALLA",
 
@@ -104,6 +104,9 @@ export const SPEC = [
   // multi line comments
   { regex: /^\/\*[\s\S]*?\*\//, tokenType: TokenTypes.NULL_TYPE },
 
+  // Number
+  { regex: /^[+-]?([\d]*[.])?[\d]+/, tokenType: TokenTypes.NUMBER_TYPE },
+
   // Symbols, delimiters
   { regex: /^;/, tokenType: TokenTypes.SEMI_COLON_TYPE },
   { regex: /^\{/, tokenType: TokenTypes.OPEN_CURLY_BRACE_TYPE },
@@ -122,7 +125,7 @@ export const SPEC = [
   { regex: /^\bjawab de\b/, tokenType: TokenTypes.PRINT },
   { regex: /^\bye sambhal\b/, tokenType: TokenTypes.VARIABLE_DECLARATION },
   { regex: /^\bagar sharam hai\b/, tokenType: TokenTypes.IF_CONDITION },
-  { regex: /^\bnahi to bhai\b/, tokenType: TokenTypes.ELSE_IF_CONDITION },
+  { regex: /^\bnahi to\b/, tokenType: TokenTypes.ELSE_IF_CONDITION },
   { regex: /^\bwarna belt\b/, tokenType: TokenTypes.ELSE_CONDITION },
   { regex: /^\bparampara\b/, tokenType: TokenTypes.PARAMPARA },
   { regex: /^\bkhandaan\b/, tokenType: TokenTypes.CLASS },
@@ -137,14 +140,13 @@ export const SPEC = [
   { regex: /^\bruko_zara\b/, tokenType: TokenTypes.AWAIT },
   { regex: /^\bnalla\b/, tokenType: TokenTypes.NALLA_TYPE },
   { regex: /^\bjab tak main na bolu\b/, tokenType: TokenTypes.WHILE_LOOP },
-  { regex: /^\bbas kar bhai\b/, tokenType: TokenTypes.BREAK_STATEMENT },
-  { regex: /^\bagla dekh bhai\b/, tokenType: TokenTypes.CONTINUE_STATEMENT },
+  { regex: /^\bbas kar\b/, tokenType: TokenTypes.BREAK_STATEMENT },
+  { regex: /^\bagla dekh\b/, tokenType: TokenTypes.CONTINUE_STATEMENT },
   { regex: /^\bchori chuppe\b/, tokenType: TokenTypes.TRY },
   { regex: /^\bpakde gaye toh\b/, tokenType: TokenTypes.CATCH },
   { regex: /^\bbas paanch minute\b/, tokenType: TokenTypes.SLEEP },
 
-  // Number
-  { regex: /^[+-]?([\d]*[.])?[\d]+/, tokenType: TokenTypes.NUMBER_TYPE },
+
 
   // Boolean
   { regex: /^\bsahi\b/, tokenType: TokenTypes.BOOLEAN_TYPE },

@@ -21,7 +21,7 @@ export default class IfStatement implements Visitor {
     if (test) {
       const testResult = InterpreterModule.getVisitor(test.type).visitNode(test);
       if (testResult === true || testResult === "sahi") {
-        this.evaluateNode(node.consequent, parentScope);
+        this.evaluateNode(node.consequent as ASTNode, parentScope);
       } else {
         const alternates = node.alternates;
         if (alternates && alternates.length > 0) {
@@ -36,7 +36,7 @@ export default class IfStatement implements Visitor {
               // If the condition is true, evaluate the node and break
               const testResult = InterpreterModule.getVisitor(alternateTest!.type).visitNode(alternateTest);
               if (testResult === true || testResult === "sahi") {
-                this.evaluateNode(alternate.consequent, parentScope);
+                this.evaluateNode(alternate.consequent as ASTNode, parentScope);
                 break;
               }
             }

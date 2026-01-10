@@ -1,1 +1,0 @@
-{"version":3,"file":"whileStatement.d.ts","sourceRoot":"","sources":["whileStatement.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,GAAG,CAAC;AACxB,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAO1C,MAAM,CAAC,OAAO,OAAO,cAAe,YAAW,OAAO;IACpD,SAAS,CAAC,IAAI,EAAE,OAAO;CAiCxB"}

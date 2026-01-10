@@ -237,9 +237,9 @@ idhar aao
     jab tak main na bolu (n <= 20) {
         agar sharam hai (n % 15 == 0) {
             jawab de "FizzBuzz";
-        } nahi to bhai (n % 3 == 0) {
+        } nahi to (n % 3 == 0) {
             jawab de "Fizz";
-        } nahi to bhai (n % 5 == 0) {
+        } nahi to (n % 5 == 0) {
             jawab de "Buzz";
         } warna belt {
             jawab de n;
@@ -335,11 +335,11 @@ jao padhai karo
 | | `sahi` | True | `true` |
 | | `galat` | False | `false` |
 | **Conditions** | `agar sharam hai` | If | `if` |
-| | `nahi to bhai` | Else if | `else if` |
+| | `nahi to` | Else if | `else if` |
 | | `warna belt` | Else | `else` |
 | **Loops** | `jab tak main na bolu` | While | `while` |
-| | `bas kar bhai` | Break | `break` |
-| | `agla dekh bhai` | Continue | `continue` |
+| | `bas kar` | Break | `break` |
+| | `agla dekh` | Continue | `continue` |
 | **OOP** | `khandaan` | Class | `class` |
 | | `ka_khoon_hai` | Extends | `extends` |
 | | `avtaar` | New | `new` |

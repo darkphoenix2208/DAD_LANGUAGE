@@ -1,1 +1,0 @@
-{"version":3,"file":"tryCatchStatement.d.ts","sourceRoot":"","sources":["tryCatchStatement.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,GAAG,CAAC;AACxB,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAG1C,MAAM,CAAC,OAAO,OAAO,iBAAkB,YAAW,OAAO;IACrD,SAAS,CAAC,IAAI,EAAE,OAAO;CAiB1B"}

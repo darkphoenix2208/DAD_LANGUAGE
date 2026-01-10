@@ -1,1 +1,0 @@
-{"version":3,"file":"ifStatement.d.ts","sourceRoot":"","sources":["ifStatement.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,GAAG,CAAC;AACxB,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAM1C,MAAM,CAAC,OAAO,OAAO,WAAY,YAAW,OAAO;IAEjD,OAAO,CAAC,YAAY;IAQpB,SAAS,CAAC,IAAI,EAAE,OAAO;CAkCxB"}

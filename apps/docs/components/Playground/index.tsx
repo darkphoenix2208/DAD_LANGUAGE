@@ -63,7 +63,7 @@ jao padhai karo`);
                 marginBottom: "24px",
                 fontStyle: "italic"
             }}>
-                "Code likh, nahi to belt padegi!" - Compiler
+                &quot;Code likh, nahi to belt padegi!&quot; - Compiler
             </p>
 
             <div className="editor-section" style={{ marginBottom: "20px" }}>

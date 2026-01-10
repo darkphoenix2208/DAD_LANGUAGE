@@ -23,7 +23,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.dadlang",
-                    "match": "\\b(idhar aao|jao padhai karo|agar sharam hai|nahi to bhai|warna belt|jab tak main na bolu|jab main tumhari umar ka tha|bas ho gaya|rishtedaar_aaye|muh_dikhai|bache_kuche)\\b"
+                    "match": "\\b(idhar aao|jao padhai karo|agar sharam hai|nahi to|warna belt|jab tak main na bolu|bas kar|agla dekh|jab main tumhari umar ka tha|bas ho gaya|rishtedaar_aaye|muh_dikhai|bache_kuche)\\b"
                 },
                 {
                     "name": "storage.type.dadlang",

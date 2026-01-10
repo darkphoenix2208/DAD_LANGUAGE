@@ -10,7 +10,7 @@ export default class ClassDeclaration extends Statement {
         this._tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.CLASS);
         const id = Expression.getExpressionImpl(NodeType.IdentifierExpression).getExpression();
 
-        let superClass = null;
+        let superClass;
         if (this._tokenExecutor.getLookahead()?.type === TokenTypes.EXTENDS) {
             this._tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.EXTENDS);
             superClass = Expression.getExpressionImpl(NodeType.IdentifierExpression).getExpression();

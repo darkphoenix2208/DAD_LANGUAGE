@@ -1,31 +1,31 @@
 // OOP Inheritance Example
-hi bhai
-    khandaan Pita {
+idhar aao
+    khandaan Person {
         sanskar(naam) {
             khud.naam = naam;
         }
-
-        bol_naam() {
-            bol bhai "Mera naam " + khud.naam + " hai.";
+        greet() {
+            jawab de "Mera naam " + khud.naam + " hai.";
         }
     }
 
-    khandaan Beta ka_khoon_hai Pita {
+    khandaan Student ka_khoon_hai Person {
         sanskar(naam, school) {
-            // No super() call explicit syntax yet, assuming handled or just setting props
             khud.naam = naam;
             khud.school = school;
         }
-
-        bol_school() {
-            bol bhai "Main " + khud.school + " mein padhta hoon.";
+        study() {
+            jawab de "Main " + khud.school + " mein padhta hoon.";
         }
     }
 
-    ye sambhal baap = avtaar Pita("Ramesh");
-    baap.bol_naam(); // "Mera naam Ramesh hai."
+    ye sambhal p1 = avtaar Person("Raju");
+    p1.greet();
 
-    ye sambhal beta = avtaar Beta("Rohan", "DPS");
+    ye sambhal s1 = avtaar Student("Chutki", "Dholakpur High");
+    s1.greet();
+    s1.study();
+jao padhai karombhal beta = avtaar Beta("Rohan", "DPS");
     beta.bol_naam(); // Inherited: "Mera naam Rohan hai."
     beta.bol_school(); // "Main DPS mein padhta hoon."
 bye bhai

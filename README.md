@@ -224,94 +224,94 @@ graph TB
 ### 🎯 Hello World
 
 ```javascript
-hi bhai
-    bol bhai "Namaste Duniya!";
-bye bhai
+idhar aao
+    jawab de "Namaste Duniya!";
+jao padhai karo
 ```
 
 ### 🔢 FizzBuzz
 
 ```javascript
-hi bhai
+idhar aao
     ye sambhal n = 1;
-    jab tak bhai (n <= 20) {
-        agar bhai (n % 15 == 0) {
-            bol bhai "FizzBuzz";
+    jab tak main na bolu (n <= 20) {
+        agar sharam hai (n % 15 == 0) {
+            jawab de "FizzBuzz";
         } nahi to bhai (n % 3 == 0) {
-            bol bhai "Fizz";
+            jawab de "Fizz";
         } nahi to bhai (n % 5 == 0) {
-            bol bhai "Buzz";
-        } warna bhai {
-            bol bhai n;
+            jawab de "Buzz";
+        } warna belt {
+            jawab de n;
         }
         n += 1;
     }
-bye bhai
+jao padhai karo
 ```
 
 ### 🏛️ OOP - Classes & Inheritance
 
 ```javascript
-hi bhai
-    // Base Class
+idhar aao
+    chugli: Base Class
     khandaan Baap {
         sanskar(naam) {
             khud.naam = naam;
         }
         
         advice() {
-            bol bhai khud.naam + " says: Padhai karo!";
+            jawab de khud.naam + " says: Padhai karo!";
         }
     }
     
-    // Child Class
+    chugl: Child Class
     khandaan Beta ka_khoon_hai Baap {
         advice() {
-            bol bhai khud.naam + " says: Thodi party bhi!";
+            jawab de khud.naam + " says: Thodi party bhi!";
         }
     }
     
-    // Create objects
+    chugli: Create objects
     ye sambhal dad = avtaar Baap("Sharma ji");
-    dad.advice();  // Output: Sharma ji says: Padhai karo!
+    dad.advice();  chugli: Output: Sharma ji says: Padhai karo!
     
     ye sambhal son = avtaar Beta("Rahul");
-    son.advice();  // Output: Rahul says: Thodi party bhi!
-bye bhai
+    son.advice();  chugli: Output: Rahul says: Thodi party bhi!
+jao padhai karo
 ```
 
 ### 🔀 Switch-Case
 
 ```javascript
-hi bhai
+idhar aao
     ye sambhal day = "somwar";
     
     rishtedaar_aaye (day) {
         muh_dikhai "somwar": 
-            bol bhai "Office jana hai";
+            jawab de "Office jana hai";
         
         muh_dikhai "ravivaar": 
-            bol bhai "Ghar pe aaram";
+            jawab de "Ghar pe aaram";
         
         bache_kuche: 
-            bol bhai "Kaam karo!";
+            jawab de "Kaam karo!";
     }
-bye bhai
+jao padhai karo
 ```
 
 ### 📊 Arrays
 
 ```javascript
-hi bhai
+idhar aao
     ye sambhal numbers = [10, 20, 30, 40];
     
-    bol bhai "Length: " + numbers.aukaat;  // 4
+    jawab de "Length: " + numbers.aukaat;  chugli: 4
     
-    numbers.thoos_de(50);  // Push
-    numbers.nikal_fek();   // Pop
+    numbers.thoos_de(50);  chugli: Push
+    numbers.nikal_fek();   chugli: Pop
     
-    bol bhai numbers;
-bye bhai
+    jawab de numbers;
+jao padhai karo
 ```
 
 ---
